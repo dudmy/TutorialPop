@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TutorialPop.iml" filepath="$PROJECT_DIR$/TutorialPop.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-java/sample-java.iml" filepath="$PROJECT_DIR$/sample-java/sample-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-kotlin/sample-kotlin.iml" filepath="$PROJECT_DIR$/sample-kotlin/sample-kotlin.iml" />
     </modules>
   </component>
 </project>
