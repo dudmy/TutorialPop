@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![download](https://img.shields.io/badge/download-1.0.0-green.svg)](https://bintray.com/dudmy/maven/tutorialpop)
 
-Helps you easily view tutorial popup. You only need to know the drawable and the class name of the screen you want to show. There is no need to consider anything else.
+It's easier to use tutorial popup that you only need to show once.
 
 ## How to use
 
@@ -17,7 +17,7 @@ dependiencies {
 
 ### Base with java
 
-First, you must prepare in the Application class. Pass a context and list of the class names of the screens to show the tutorial as parameters.
+First, you need to prepare in the Application class. Pass the context and the class name list of the page where the tutorial should be shown as a parameter.
 
 ```java
 public class MyApplication extends Application {
@@ -35,7 +35,7 @@ public class MyApplication extends Application {
 }
 ```
 
-and then check out the current page needed tutorial in the Base Activity class.
+and then determine the current page needed tutorial in the Base Activity class.
 
 ```java
 public class BaseActivity extends AppCompatActivity {
@@ -51,7 +51,7 @@ public class BaseActivity extends AppCompatActivity {
 
 ### Base with kotlin
 
-First, you must prepare in the Application class. Pass a context and list of the class names of the screens to show the tutorial as parameters.
+First, you need to prepare in the Application class. Pass the context and the class name list of the page where the tutorial should be shown as a parameter.
 
 ```kotlin
 class MyApplication : Application() {
@@ -65,7 +65,7 @@ class MyApplication : Application() {
 }
 ```
 
-and then check out the current page needed tutorial in the Base Activity class.
+and then determine the current page needed tutorial in the Base Activity class.
 
 ```kotlin
 open class BaseActivity : AppCompatActivity() {
@@ -78,9 +78,10 @@ open class BaseActivity : AppCompatActivity() {
 }
 ```
 
-**IMPORTANT!! Drawable's name must like 'tutorial_{ClassNameWithLowerCase}'.**  
-If the page name you need to show the tutorial is FirstActivity and SecondActivity,  
-drawable name is tutorial_firstactivity and tutorial_secondactivity.
+### Drawable name convention
+
+The tutorial drawable resource name should look like **tutorial_{ClassNameWithLowerCase}**.  
+If the class name of the page to show is FirstActivity, the resource name is tutorial_firstactivity.
 
 ## Used library version
 
